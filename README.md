@@ -94,15 +94,17 @@ solc-select use 0.8.29
 python src/code-scanner.py
 ```
 
-## Building Docker image
+## Running Docker container
+The Docker image can pull and run by pulling from DockerHub:
 ```
-docker build -t scanner .
-docker run -d scanner
+sudo docker pull theslackone/scanner
+sudo docker run theslackone/scanner
 ```
 
-## Running Docker container
+## Building Docker image and run
 ```
-docker run --name scanner scanner
+docker build -t scanner .
+docker run scanner
 ```
 
 # References
